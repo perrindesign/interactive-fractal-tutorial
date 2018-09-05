@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required imported CSS files -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/prism.css"/>
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css"/>
+ </head>
+
+
+ <body class="container">
+
+		<!-- Make your modifications below -->
+    <header>
+       <div class="logo-container"><a href="index.html">CCC</a></div>
+       <div class="header-container">Creative Coding Challenge </div>
+    </header>
+
+
+		<!-- Make your navigation modifications below -->
+		<!-- Replicate the heading structure for a 'table of contents' nav -->
+    <nav>
+       <div class="nav-container">
+          <a href="#title">Heading 1</a>
+          <ol>
+             <li><a href="#step1">Heading 2</a></li>
+             <ol>
+                <li><a href="#step1-1">Heading 3</a></li>
+                <ol>
+                   <li><a href="#step1-1-1">Heading 4</a></li>
+                </ol>
+             </ol>
+             <li><a href="#step2-1">Elements</a></li>
+             <ol>
+                <li><a href="#step2-1">Text</a></li>
+                <li><a href="#step2-2">Lists</a></li>
+                <li><a href="#step2-3">Code</a></li>
+             </ol>
+             <li><a href="#step3">Media</a></li>
+             <ol>
+                <li><a href="#step3-1">Images</a></li>
+                <li><a href="#step3-2">Videos</a></li>
+                <li><a href="#step3-3">Code Embeds</a></li>
+             </ol>
+          </ol>
+       </div>
+    </nav>
+
+    <main>
+       <article>
+
+				 <!-- Make your content modifications below -->
+				 <!-- Section for the top banner heading, this should be your only h1 -->
+          <section class="title-container">
+             <h1 id="title">Heading 1</h1>
+          </section>
+
+					<!-- Body section with additional heading elements -->
+          <section class="content-container">
+             <h2 id="step1">Heading 2</h2>
+             <h3 id="step1-1">Heading 3</h3>
+             <h4 id="step1-1-1">Heading 4</h4>
+					</section>
+
+					<!-- Body section with HTML formatting elements -->
+					<section class="content-container">
+             <h2 id="step2">Elements</h2>
+
+						 <h3 id="step2-1">Text</h3>
+             <p>Regular text.</p>
+             <p><strong>Strong text.</strong></p>
+             <p><em>Emphasised text.</em></p>
+             <p><a href="#step2-1">Link text.</a></p>
+
+						<h3 id="step2-2">Lists</h3>
+             <ol>
+                <li>Ordered</li>
+                <li>List</li>
+                <li>Of</li>
+                <li>Items</li>
+             </ol>
+             <ul>
+                <li>Unordered</li>
+                <li>List</li>
+                <li>Of</li>
+                <li>Items</li>
+             </ul>
+
+						 <h3 id="step2-3">Code</h3>
+						 <!-- pre and code tages with 'language-processing' class for syntax highlighting -->
+             <pre><code class="language-processing">// Your code goes in here.</code></pre>
+						 <!-- Be careful as any tabs or indents will be included in the pre-formatted code -->
+					</section>
+
+					<!-- Body section with HTML media elements -->
+					<section class="content-container">
+             <h2 id="step3">Media</h2>
+
+						 <h3 id="step3-1">Images</h3>
+             <figure class="image-container">
+							 <!-- Link your own images from the img folder or somewhere online -->
+                <img src="img/placeholder.png" alt="This is an image." />
+                <figcaption>Image caption.</figcaption>
+             </figure>
+
+						 <h3 id="step3-2">Videos</h3>
+             <figure class="video-container">
+							 	<!-- Replace the src URL, make sure to use the embed URL if linking from from youtube -->
+                <iframe src="https://www.youtube.com/embed/S1o41_oHSAg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <figcaption>Video caption.</figcaption>
+             </figure>
+
+						 <h3 id="step3-3">Code Embeds</h3>
+						 <!-- Replace the src URL, make sure to use your own sketch URL if you don't want the default editor --> -->
+             <iframe src="https://editor.p5js.org" scrolling="no" frameborder="0" height="575" allowtransparency="true" allowfullscreen="true" name="P5.js Embed" title="P5.js Embed 1" style="width: 100%; overflow: hidden;"></iframe>
+             <label for="P5.js Embed"><em>Code embed caption.</em></label>
+          </section>
+
+
+       </article>
+    </main>
+
+
+    <footer>Footer</footer>
+
+
+    <!-- Required imported js -->
+    <script src="js/prism.js"></script>
+    <script src="js/scrollmenu.js"></script>
+    <script type="text/javascript">
+       new ScrollMenu('.content-container a[href*="#"], .nav-container a', {
+       duration: 500,
+       activeOffset: 100,
+       })
+    </script>
+
+
+ </body>
+</html>
